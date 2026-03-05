@@ -1,0 +1,14 @@
+step 1: move to drive by d:
+step 2: cd mivotech_project
+step 3:create environment : python -m venv venv (if not exist )
+step 4:activat environment : venv\Scripts\activate
+step 5:pip install -r requirements.txt (if not installed)
+step 6:python manage.py makemigrations (if not done )
+step 7:python manage.py migrate (if not done )
+step 8:python manage.py createsuperuser (if not exist )
+step 9:python manage.py runserver
+
+website : http://127.0.0.1:8000
+admin panel : http://127.0.0.1:8000/admin-login
+username : admin 
+Password : admin123

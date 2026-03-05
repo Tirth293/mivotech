@@ -1,0 +1,628 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mivo Tech · Scan Once, Grow Forever</title>
+    <!-- Bootstrap 5 + Icons + Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body class="light-theme">
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3 px-3 px-md-5">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-3 d-flex align-items-center" href="#">
+                <i class="fas fa-qrcode me-2" style="color: #1f8ab3;"></i>
+                <span class="brand-glow">MIVO </span><span class="fw-light ms-1">TECH</span>
+            </a>
+            <button class="navbar-toggler border-0 dark-theme-menu" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMivoTech" id="darkThemeToggler">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMivoTech">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
+    <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+    <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+    <li class="nav-item"><a class="nav-link" href="#product">STANDEE</a></li>
+    <li class="nav-item"><a class="nav-link" href="#pricing">PLANS</a></li>
+    <li class="nav-item"><a class="nav-link" href="#footer-main">CONTACT</a></li>
+</ul>
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggleBtn"><i class="fas fa-moon"></i><span
+                            id="themeText">Dark</span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container px-3 px-lg-4 py-4">
+        <!-- HOME SECTION -->
+        <section id="home" class="row align-items-center g-5 my-4">
+            <div class="col-lg-6">
+                <div class="hero-badge mb-4"><i class="fas fa-bolt"></i> Scan Once · Grow Forever</div>
+                <h1 class="display-4 fw-bold mb-3 lh-1">Next‑Gen Payment <span style="color: #1f6f9c;">& Review
+                        Hub</span> For Local India</h1>
+                <p class="lead fs-4">Smart QR Standees — UPI, Google Reviews, WhatsApp, Instagram · One Acrylic Glance
+                </p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#pricing" class="btn btn-lg btn-primary rounded-pill px-4"
+                        style="background: #1b6f9c; border: none;">Order Standee →</a>
+                    
+                </div>
+                <div class="mt-4 d-flex gap-4">
+                    <span><i class="fas fa-check-circle" style="color:#2a9c5a;"></i> 100+ Businesses</span>
+                    <span><i class="fas fa-star text-warning"></i> 4.9 Rating</span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center position-relative">
+                <div class="bg-soft-pattern w-100 h-100 position-absolute top-0 start-0 opacity-50"></div>
+                <i class="fas fa-qrcode mock-image fa-8x"></i>
+                <i class="fas fa-mobile-alt mock-image fa-5x mx-3"></i>
+                <i class="fab fa-google mock-image fa-4x" style="color: #f2b42c;"></i>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="my-5 pt-5">
+            <h2 class="fw-bold mb-5"><span class="border-bottom border-4 border-primary pb-2">Our Services</span></h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-paint-roller feature-icon mb-3"></i>
+                            <h5>Smart QR Standee</h5>
+                            <p>Custom UPI + Google Review + Social QR · Acrylic, Waterproof</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-star feature-icon mb-3"></i>
+                            <h5>Review Growth System</h5>
+                            <p>One Tap Google Review · 5‑Star Automation, Just Links</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-credit-card feature-icon mb-3"></i>
+                            <h5>Multi‑Payment</h5>
+                            <p>UPI · PhonePe · Paytm · GPay · All In One Static QR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-brush feature-icon mb-3"></i>
+                            <h5>Custom Branding</h5>
+                            <p>Your Logo, Colours, Tagline · We Design and Print</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PRODUCT SECTION -->
+        <section id="product" class="row my-5 pt-3 g-4 align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold"><i class="fas fa-cube me-2" style="color:#1f6f9c;"></i> Mivo Tech Smart Standee</h2>
+                <p class="fs-5">Waterproof · Long‑Life · Table‑Top · Custom Multi‑QR</p>
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Waterproof &
+                            Durable</strong> — Counters, Outdoors</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Quick Scan
+                            Layout</strong> – No Confusion</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Multi QR
+                            Integration</strong> (UPI, Review, Social)</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Your Branding,
+                            Colours</strong></li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center p-4">
+                <!-- Image Slider/Carousel -->
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded-3 shadow">
+                        <div class="carousel-item active">
+                            <img src="{% static 'images/s1.jpeg' %}" class="d-block w-100" alt="Smart Standee - Counter Size">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'images/s2.jpeg' %}" class="d-block w-100" alt="Smart Standee - Acrylic Finish">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'images/s3.jpeg' %}" class="d-block w-100" alt="Smart Standee - Full Custom Design">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'images/s4.jpeg' %}" class="d-block w-100" alt="Smart Standee - Full Custom Design">
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators position-relative mt-3">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0"
+                            class="active bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"
+                            class="bg-secondary" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"
+                            class="bg-secondary" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3"
+                            class="bg-secondary" aria-label="Slide 4"></button>
+                    </div>
+                </div>
+                <p class="mt-3 fw-semibold">Counter Size / Acrylic / Full Custom</p>
+            </div>
+        </section>
+        <!-- PRICING SECTION  -->
+        <section id="pricing" class="my-5 pt-3">
+            <h2 class="fw-bold mb-4">QR Standee Plans </h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card pricing-card p-3 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic</h5>                           
+                            <p >Single QR + Basic Branding</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check me-2 text-success"></i> One QR (UPI or Link)</li>
+                                <li><i class="fas fa-check me-2 text-success"></i> Business Name</li>
+                                <li><i class="fas fa-check me-2 text-success"></i> Standard Standee</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pricing-card p-3 h-100 border-2 border-primary">
+                        <div class="card-body">                            
+                            <h5 class="card-title">Pro <span class="badge bg-warning mb-2">Most Popular</span></h5>
+                            <!-- price tag removed -->
+                            <p>Multi QR + Review + Custom Design</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check me-2 text-success"></i> UPI + Google Review QR</li>
+                                <li><i class="fas fa-check me-2 text-success"></i> WhatsApp / Instagram QR</li>
+                                <li><i class="fas fa-check me-2 text-success"></i> Full Custom Colours/Logo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pricing-card p-3 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium</h5>
+                            <!-- price tag removed -->
+                            <p>Multi QR + Premium Acrylic + Priority Delivery</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check me-2 text-success"></i> All Pro Features</li>
+                                <li><i class="fas fa-check me-2 text-success"></i> Premium Acrylic Standee</li>
+                                <li><i class="fas fa-check me-2 text-success"></i> Priority Delivery</li>
+                                <li><i class="fas fa-check me-2 text-success"></i> All Social Links + Custom</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- ========== QR STANDEE SIZES  ========== -->
+<section id="product-sizes">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-title">
+                <i class="fas fa-ruler-combined me-2 text-primary"></i>
+                QR Standee Sizes & Options
+            </h2>
+            <p class="section-subtitle">Premium acrylic standees with crystal clear finish, available in multiple thickness options</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Small / Table Top -->
+            <div class="col-lg-6">
+                <div class="product-card card">
+                    <div class="product-img-wrapper">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23667eea'/%3E%3Crect x='30' y='30' width='140' height='140' fill='white' rx='20'/%3E%3Crect x='50' y='50' width='100' height='100' fill='%23333' rx='10'/%3E%3Ccircle cx='100' cy='100' r='30' fill='white'/%3E%3Crect x='85' y='95' width='30' height='30' fill='%23333' rx='5'/%3E%3C/svg%3E" 
+                             alt="Table Top QR Standee" 
+                             class="product-img">
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-table"></i>
+                            Table-Top Size
+                        </h5>
+                        <ul class="size-list">
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    4 × 6 inches
+                                    <small class="text-muted ms-2">(101.6 × 152.4 mm)</small>
+                                </span>
+                                <!-- price span removed -->
+                            </li>
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-star" style="color: #f59e0b;"></i>
+                                    5 × 7 inches
+                                    <small class="text-muted ms-2">(127 × 177.8 mm)</small>
+                                </span>
+                                <!-- price span removed, kept popular tag as indicator -->
+                                <span class="popular-tag ms-2">Most Popular</span>
+                            </li>
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    6 × 8 inches
+                                    <small class="text-muted ms-2">(152.4 × 203.2 mm)</small>
+                                </span>
+                                <!-- price span removed -->
+                            </li>
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    6 × 9 inches
+                                    <small class="text-muted ms-2">(152.4 × 228.6 mm)</small>
+                                </span>
+                                <!-- price span removed -->
+                            </li>
+                        </ul>
+                        <div class="thickness-options">
+                            <span class="thickness-badge">3mm</span>
+                            <span class="thickness-badge">4mm</span>
+                            <span class="thickness-badge premium">5mm ⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- A Series -->
+            <div class="col-lg-6">
+                <div class="product-card card">
+                    <div class="product-img-wrapper">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23764ba2'/%3E%3Crect x='25' y='25' width='150' height='150' fill='white' rx='15'/%3E%3Ctext x='40' y='110' font-family='Arial' font-size='50' fill='%23333' font-weight='bold'%3EA5%3C/text%3E%3C/svg%3E" 
+                             alt="A Series QR Standee" 
+                             class="product-img">
+                        <span class="product-badge">Recommended</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-layer-group"></i>
+                            A-Series Sizes
+                        </h5>
+                        <ul class="size-list">
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    A6
+                                    <small class="text-muted ms-2">(105 × 148 mm)</small>
+                                </span>
+                                
+                            </li>
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-star" style="color: #f59e0b;"></i>
+                                    A5
+                                    <small class="text-muted ms-2">(148 × 210 mm)</small>
+                                </span>
+                                <span class="popular-tag ms-2">Most Popular</span>
+                            </li>
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    A4
+                                    <small class="text-muted ms-2">(210 × 297 mm)</small>
+                                </span>
+                                
+                            </li>
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    A3
+                                    <small class="text-muted ms-2">(297 × 420 mm)</small>
+                                </span>
+                                
+                            </li>
+                        </ul>
+                        <div class="thickness-options">
+                            <span class="thickness-badge">3mm</span>
+                            <span class="thickness-badge">4mm</span>
+                            <span class="thickness-badge premium">5mm ⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medium Display -->
+            <div class="col-lg-6">
+                <div class="product-card card">
+                    <div class="product-img-wrapper">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23374151'/%3E%3Crect x='20' y='20' width='160' height='160' fill='white' rx='10'/%3E%3Crect x='40' y='40' width='120' height='120' fill='%23333' rx='5'/%3E%3Ccircle cx='100' cy='100' r='25' fill='white'/%3E%3C/svg%3E" 
+                             alt="Medium QR Standee" 
+                             class="product-img">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-tv"></i>
+                            Medium Display
+                        </h5>
+                        <ul class="size-list">
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    8 × 10 inches
+                                    <small class="text-muted ms-2">(203 × 254 mm)</small>
+                                </span>
+                                
+                            </li>
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    8 × 12 inches
+                                    <small class="text-muted ms-2">(203 × 305 mm)</small>
+                                </span>
+                                
+                            </li>
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    10 × 12 inches
+                                    <small class="text-muted ms-2">(254 × 305 mm)</small>
+                                </span>
+                                
+                            </li>
+                            <li>
+                                <span class="size-name">
+                                    <i class="fas fa-check-circle"></i>
+                                    12 × 18 inches
+                                    <small class="text-muted ms-2">(305 × 457 mm)</small>
+                                </span>
+                                
+                            </li>
+                        </ul>
+                        <div class="thickness-options">
+                            <span class="thickness-badge">3mm</span>
+                            <span class="thickness-badge">4mm</span>
+                            <span class="thickness-badge premium">5mm ⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        
+         <!-- CUSTOMER FEEDBACK SECTION -->
+<section id="feedback" class="my-5 pt-4">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">
+                <i class="fas fa-comments me-2 text-primary"></i>
+                Customer Feedback
+            
+        </div>
+
+        <!-- Testimonials -->
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-4">
+                <div class="card feedback-card h-100 p-4">
+                    <div class="mb-3 text-warning">★★★★★</div>
+                    <p>“Mivo Tech standee increased our Google reviews in just 2 weeks.”</p>
+                    <h6 class="fw-bold mt-3 mb-0">Rakesh Patel</h6>
+                    <small class="feedback-role">Restaurant Owner</small>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card feedback-card h-100 p-4">
+                    <div class="mb-3 text-warning">★★★★★</div>
+                    <p>“Professional design and fast delivery. Payments are easier now.”</p>
+                    <h6 class="fw-bold mt-3 mb-0">Neha Shah</h6>
+                    <small class="feedback-role">Salon Owner</small>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card feedback-card h-100 p-4">
+                    <div class="mb-3 text-warning">★★★★★</div>
+                    <p>“Highly recommended for small businesses.”</p>
+                    <h6 class="fw-bold mt-3 mb-0">Amit Verma</h6>
+                    <small class="feedback-role">Retail Store Owner</small>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Send Feedback Form -->
+        <div class="card feedback-form-card p-4 p-md-5">
+            <h4 class="fw-bold mb-4 text-center">Send Your Feedback</h4>
+
+            <form method="POST" action="{% url 'submit_feedback' %}" class="feedback-form">
+    {% csrf_token %}
+    
+    <div class="row g-3">
+        <div class="col-md-6">
+            <input type="text" name="name" class="form-control feedback-input"
+                   placeholder="Your Name" required>
+        </div>
+
+        <div class="col-md-6">
+            <input type="email" name="email" class="form-control feedback-input"
+                   placeholder="Your Email" required>
+        </div>
+
+        <div class="col-12">
+            <textarea name="message" rows="4"
+                      class="form-control feedback-input"
+                      placeholder="Write your feedback..." required></textarea>
+        </div>
+
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary px-5 rounded-pill feedback-btn">
+                Submit Feedback
+            </button>
+        </div>
+    </div>
+</form>
+        </div>
+
+    </div>
+</section>
+        <!-- FOOTER -->
+        <!-- IMPROVED FOOTER -->
+        <footer class="mt-5 pt-5">
+            <div id="footer-main" class="footer-main py-5">
+                <div class="row g-4">
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-brand mb-4">
+                            <i class="fas fa-qrcode fa-2x mb-3" style="color: #1f8ab3;"></i>
+                            <h3 class="brand-glow">MIVO <span class="fw-light">TECH</span></h3>
+                            <p class="tagline mt-2">scan once · grow forever</p>
+                        </div>
+                        <p class="footer-about">
+                            Next-generation digital payment and review solutions for local businesses.
+                            Smart QR standees that help you grow smarter.
+                        </p>
+                        <div class="social-links mt-4">
+                            <a href="https://www.instagram.com/mivo.tech?igsh=bzg2c2V6OXNheDZ2" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/9737646751" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#home"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                            <li><a href="#services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
+                            <li><a href="#product"><i class="fas fa-chevron-right me-2"></i>Standee</a></li>
+                            <li><a href="#pricing"><i class="fas fa-chevron-right me-2"></i>Plans</a></li>
+                            <li><a href="#contact"><i class="fas fa-chevron-right me-2"></i>Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Our Services -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title">Our Services</h5>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Smart QR Standee</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Review Growth System</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Multi-Payment Integration</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Custom Branding</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Bulk Orders</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Distributor Program</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title">Get In Touch</h5>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <p class="mb-0">+91 97376 46751 </p> 
+                                    <p>+91 81530 60438</p>
+                                    <small>Mon-Sat, 9am-7pm</small>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <p class="mb-0">Info.mivotech@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <p class="mb-0">+91 97376 46751 </p> 
+                                    <p>+91 81530 60438</p>
+                                    <small>WhatsApp business</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Bottom Footer -->
+            <div class="footer-bottom py-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">© 2026 Mivo Tech. All rights reserved. DEVELOPED BY TECH INNOVATION IT SOLUTION </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+    </main>
+<!-- ===== WELCOME POPUP ===== -->
+<div id="welcomePopup" class="welcome-overlay">
+    <div class="welcome-box">
+
+        <button class="welcome-close" onclick="closeWelcome()">×</button>
+
+        <div class="welcome-content text-center">
+
+            <div class="welcome-icon">
+                <i class="fas fa-qrcode"></i>
+            </div>
+
+            <h2 class="fw-bold mt-3">
+                Welcome to <span class="brand-glow">MIVO TECH</span>
+            </h2>
+
+            <p class="mt-3">
+                🚀 Scan Once · Grow Forever <br>
+                Smart QR Standees for Modern Businesses
+            </p>
+
+            <div class="mt-4">
+                <a href="#pricing" class="btn btn-primary rounded-pill px-4 me-2">
+                    Explore Plans
+                </a>
+                <button class="btn btn-outline-secondary rounded-pill px-4"
+                        onclick="closeWelcome()">
+                    Continue
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   
+    
+</body>
+<script src="{% static 'js/script.js' %}"></script>
+</html>z
