@@ -7,7 +7,11 @@ SECRET_KEY = 'django-insecure-mivotech-secret-key'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "mivotech.onrender.com",
+    "localhost",
+    "127.0.0.1"
+]
 
 # =========================
 # ROOT URLCONF - ADD THIS IF MISSING
