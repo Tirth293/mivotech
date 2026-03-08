@@ -1,5 +1,5 @@
 from pathlib import Path
-import os 
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -7,12 +7,12 @@ SECRET_KEY = 'django-insecure-mivotech-secret-key'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']   # Render needs this
 
 # =========================
-# ROOT URLCONF - ADD THIS IF MISSING
+# ROOT URLCONF
 # =========================
-ROOT_URLCONF = 'mivotech_project.urls'  # Make sure this matches your project name
+ROOT_URLCONF = 'mivotech_project.urls'
 
 # =========================
 # INSTALLED APPS
@@ -32,9 +32,13 @@ INSTALLED_APPS = [
 # =========================
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+
+    # ADD THIS FOR RENDER STATIC FILES
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',  # Make sure this is enabled
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'website.middleware.CSRFRefreshMiddleware',
@@ -75,20 +79,38 @@ DATABASES = {
 # STATIC FILES
 # =========================
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+# REQUIRED FOR RENDER
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# WhiteNoise static serving
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+# =========================
+# MEDIA FILES
+# =========================
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # =========================
 # CSRF SETTINGS
 # =========================
-CSRF_COOKIE_SECURE = False  # Set to True only in production with HTTPS
+CSRF_COOKIE_SECURE = False
 CSRF_COOKIE_HTTPONLY = False
 CSRF_COOKIE_SAMESITE = 'Lax'
 CSRF_HEADER_NAME = 'HTTP_X_CSRFTOKEN'
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://127.0.0.1:8000']
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+]
+
 
 # =========================
 # DEFAULT FIELD

@@ -1,0 +1,1 @@
+web gunicorn mivotech_project.wsgiapplication
