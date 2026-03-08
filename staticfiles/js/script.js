@@ -100,3 +100,88 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+/* ===================================
+   ADMIN PANEL JAVASCRIPT
+=================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ===============================
+       SIDEBAR TOGGLE
+    =============================== */
+
+    const toggleBtn = document.getElementById("menu-toggle");
+    const wrapper = document.getElementById("wrapper");
+
+    if (toggleBtn && wrapper) {
+
+        toggleBtn.addEventListener("click", function () {
+            wrapper.classList.toggle("toggled");
+        });
+
+    }
+
+    /* ===============================
+       AUTO CLOSE SIDEBAR ON MOBILE
+    =============================== */
+
+    const sidebarLinks = document.querySelectorAll(".sidebar a");
+
+    sidebarLinks.forEach(function(link){
+
+        link.addEventListener("click", function(){
+
+            if (window.innerWidth < 768) {
+
+                if (wrapper) {
+                    wrapper.classList.remove("toggled");
+                }
+
+            }
+
+        });
+
+    });
+
+    /* ===============================
+       DELETE CONFIRMATION
+    =============================== */
+
+    const deleteButtons = document.querySelectorAll(".btn-delete");
+
+    deleteButtons.forEach(function(btn){
+
+        btn.addEventListener("click", function(e){
+
+            const confirmDelete = confirm("Are you sure you want to delete this item?");
+
+            if (!confirmDelete) {
+                e.preventDefault();
+            }
+
+        });
+
+    });
+
+    /* ===============================
+       AUTO CLOSE ALERTS
+    =============================== */
+
+    const alerts = document.querySelectorAll(".alert");
+
+    alerts.forEach(function(alert){
+
+        setTimeout(function(){
+
+            alert.style.transition = "0.5s";
+            alert.style.opacity = "0";
+
+            setTimeout(function(){
+                alert.remove();
+            },500);
+
+        },3000);
+
+    });
+
+});
